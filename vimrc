@@ -1,4 +1,4 @@
-" Mattthew Davis Vim Setup
+ Mattthew Davis Vim Setup
  
 autocmd FileType c,cpp set softtabstop=8 shiftwidth=8 expandtab
 autocmd FileType python set softtabstop=4 shiftwidth=4 expandtab
@@ -82,7 +82,7 @@ nnoremap <leader>oo :set list!<CR>
 
 " Compelte Closing Brakets
 :inoremap {<CR> {<CR>}<Esc>ko
-:inoremap ( ()<Esc>i
+" :inoremap ( ()<Esc>i This is a horrible bind
 :inoremap <C-f> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
 
 " Move without arrow keys
@@ -122,6 +122,9 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'}
 
 " Lightline
 Plug 'itchyny/lightline.vim'
+
+" Vim Fugitive (for github stuff)
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
