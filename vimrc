@@ -1,4 +1,4 @@
- Mattthew Davis Vim Setup
+ " Mattthew Davis Vim Setup
  
 autocmd FileType c,cpp set softtabstop=8 shiftwidth=8 expandtab
 autocmd FileType python set softtabstop=4 shiftwidth=4 expandtab
