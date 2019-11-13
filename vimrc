@@ -117,8 +117,8 @@ Plug 'https://tpope.io/vim/commentary.git'
 
 " Auto compeletion
 " Plug 'lifepillar/vim-mucomplete'
-let g:ycm_global_ycm_extra_conf = '~/work/purity/.ycm_extra_conf.py'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'}
+" let g:ycm_global_ycm_extra_conf = '~/work/purity/.ycm_extra_conf.py'
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'}
 
 " Lightline
 Plug 'itchyny/lightline.vim'
@@ -148,17 +148,17 @@ set completeopt+=menuone
 """"""""""""""""""""""""""""""
 " => YouCompleteMe
 """"""""""""""""""""""""""""""
-let g:ycm_min_num_of_chars_for_completion=1
-let g:ycm_confirm_extra_conf=0
-let g:ycm_autoclose_preview_window_after_completion = 1 
-let g:ycm_always_populate_location_list = 1
-nnoremap <F5>           :YcmForceCompileAndDiagnostics<CR>
-nnoremap <leader>gic    :YcmCompleter GoToInclude<CR>
-nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
-nnoremap <C-\>    	:YcmCompleter GoToDefinition<CR>
-nnoremap <leader>gip    :YcmCompleter GoToImprecise<CR>
-nnoremap <leader>f      :YcmCompleter FixIt<CR>
-nnoremap <leader>n 	:lnext<CR>
+" let g:ycm_min_num_of_chars_for_completion=1
+" let g:ycm_confirm_extra_conf=0
+" let g:ycm_autoclose_preview_window_after_completion = 1 
+" let g:ycm_always_populate_location_list = 1
+" nnoremap <F5>           :YcmForceCompileAndDiagnostics<CR>
+" nnoremap <leader>gic    :YcmCompleter GoToInclude<CR>
+" nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
+" nnoremap <C-\>    	:YcmCompleter GoToDefinition<CR>
+" nnoremap <leader>gip    :YcmCompleter GoToImprecise<CR>
+" nnoremap <leader>f      :YcmCompleter FixIt<CR>
+" nnoremap <leader>n 	:lnext<CR>
 " Code navigation with Ctrl-] , use Ctrl-O to get back to previous location
 
 """"""""""""""""""""""""""""""
