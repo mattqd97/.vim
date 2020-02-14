@@ -117,14 +117,17 @@ Plug 'https://tpope.io/vim/commentary.git'
 
 " Auto compeletion
 " Plug 'lifepillar/vim-mucomplete'
-let g:ycm_global_ycm_extra_conf = '~/work/purity/.ycm_extra_conf.py'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'}
+" let g:ycm_global_ycm_extra_conf = '~/work/purity/.ycm_extra_conf.py'
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'}
 
 " Lightline
 Plug 'itchyny/lightline.vim'
 
 " Vim Fugitive (for github stuff)
 Plug 'tpope/vim-fugitive'
+
+" Cscope Key Map
+Plug 'dr-kino/cscope-maps'
 
 call plug#end()
 
@@ -184,6 +187,12 @@ set laststatus=2
 " => CTags stuff
 """"""""""""""""""""""""""""""
 set tags=tags;/
+
+""""""""""""""""""""""""""""""
+" => CTags stuff
+""""""""""""""""""""""""""""""
+cs add $CSCOPE_DB
+set cscopetag&
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
