@@ -116,9 +116,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'https://tpope.io/vim/commentary.git'
 
 " Auto compeletion
-" Plug 'lifepillar/vim-mucomplete'
 " let g:ycm_global_ycm_extra_conf = '~/work/purity/.ycm_extra_conf.py'
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer'}
+Plug 'Valloric/YouCompleteMe'
 
 " Lightline
 Plug 'itchyny/lightline.vim'
@@ -160,7 +159,7 @@ set completeopt+=menuone
 " nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
 " nnoremap <C-\>    	:YcmCompleter GoToDefinition<CR>
 " nnoremap <leader>gip    :YcmCompleter GoToImprecise<CR>
-" nnoremap <leader>f      :YcmCompleter FixIt<CR>
+nnoremap <leader>f      :YcmCompleter FixIt<CR>
 " nnoremap <leader>n 	:lnext<CR>
 " Code navigation with Ctrl-] , use Ctrl-O to get back to previous location
 
