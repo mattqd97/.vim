@@ -116,7 +116,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'https://tpope.io/vim/commentary.git'
 
 " Auto compeletion
-" let g:ycm_global_ycm_extra_conf = '~/work/purity/.ycm_extra_conf.py'
 Plug 'Valloric/YouCompleteMe'
 
 " Lightline
@@ -127,6 +126,9 @@ Plug 'tpope/vim-fugitive'
 
 " Cscope Key Map
 Plug 'dr-kino/cscope-maps'
+
+" FZF
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
@@ -188,10 +190,15 @@ set laststatus=2
 set tags=tags;/
 
 """"""""""""""""""""""""""""""
-" => CTags stuff
+" => Cscope stuff
 """"""""""""""""""""""""""""""
 cs add $CSCOPE_DB
 set cscopetag&
+
+""""""""""""""""""""""""""""""
+" => fzf binds 
+""""""""""""""""""""""""""""""
+nnoremap <leader>ll :FZF<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
